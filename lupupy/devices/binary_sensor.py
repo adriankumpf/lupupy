@@ -44,7 +44,7 @@ class BinarySensor(Device):
         if status == "{WEB_MSG_DC_CLOSE}":
             return "Closed"
 
-        raise Exception("invalid status: %s" % status)
+        return "unknown"
 
     @property
     def is_on(self):
